@@ -14,7 +14,7 @@ export default function Intro() {
     return (
       <View style={styles.splash}>
         <Image
-          source={require("../../assets/uber.png")}
+          source={require("../../assets/images/uber.png")}
           style={styles.logo}
           resizeMode="contain"
         />
@@ -24,7 +24,7 @@ export default function Intro() {
 
   return (
     <ImageBackground
-      source={require("../../assets/background.png")}
+      source={require("../../assets/images/background.png")}
       style={styles.background}
     >
       <View style={styles.overlay}>
@@ -40,11 +40,11 @@ export default function Intro() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({ 
   splash: { flex: 1, backgroundColor: "#06C167", justifyContent: "center", alignItems: "center" },
   logo: { width: 200, height: 200 },
   background: { flex: 1, resizeMode: "cover" },
-  overlay: { flex: 1, justifyContent: "flex-end", alignItems: "center", paddingBottom: 40, backgroundColor: "rgba(0,0,0,0.3)" },
+  overlay: { flex: 1, justifyContent: "flex-end", alignItems: "center", paddingBottom: 80, backgroundColor: "rgba(0, 0, 0, 0.42)" },
   welcome: { fontSize: 22, fontWeight: "bold", color: "#fff", marginBottom: 30 },
   continueButton: { backgroundColor: "#06C167", paddingVertical: 16, paddingHorizontal: 100, borderRadius: 30, marginBottom: 40 },
   buttonText: { color: "#fff", fontSize: 20, fontWeight: "600" },

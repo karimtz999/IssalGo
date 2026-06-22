@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   View,
   Text,
@@ -8,11 +9,12 @@ import {
   ImageBackground,
   Image,
 } from "react-native";
+import { Link } from "expo-router";
 
 export default function Login() {
   return (
     <ImageBackground
-      source={require("../../assets/login.png")} // your food collage background
+      source={require("../../assets/images/login.png")} // your food collage background
       style={styles.background}
     >
       <View style={styles.overlay}>
@@ -22,7 +24,7 @@ export default function Login() {
         {/* Phone number input with flag */}
         <View style={styles.inputContainer}>
           <Image
-            source={require("../../assets/maroc.png")} // add your flag image here
+            source={require("../../assets/images/maroc.png")} // add your flag image here
             style={styles.flag}
           />
           <Text style={styles.countryCode}>+212</Text>
@@ -34,10 +36,11 @@ export default function Login() {
         </View>
 
         {/* Continue button */}
-        <TouchableOpacity style={styles.continueButton}>
-          <Text style={styles.continueText}>Continue</Text>
-        </TouchableOpacity>
-
+        <Link href="./dachboard" asChild>
+          <TouchableOpacity style={styles.continueButton}>
+            <Text style={styles.continueText}>Continue</Text>
+          </TouchableOpacity>
+        </Link>
         {/* Divider line with "or" */}
         <View style={styles.dividerContainer}>
           <View style={styles.line} />
@@ -48,7 +51,7 @@ export default function Login() {
         {/* Alternative login options */}
         <TouchableOpacity style={styles.altButton}>
           <Image
-            source={require("../../assets/google.png")} // Google logo
+            source={require("../../assets/images/google.png")} // Google logo
             style={styles.icon}
           />
           <Text style={styles.altText}>Continue with Google</Text>
@@ -56,7 +59,7 @@ export default function Login() {
 
         <TouchableOpacity style={styles.altButton}>
           <Image
-            source={require("../../assets/gmail.png")} // Gmail logo
+            source={require("../../assets/images/gmail.png")} // Gmail logo
             style={styles.icon}
           />
           <Text style={styles.altText}>Continue with Email</Text>
