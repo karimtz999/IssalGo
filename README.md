@@ -1,5 +1,5 @@
 🌍 Global Startup by Abdelkarim Elfar — ElfaGo
-ElfaGo is more than a delivery app — it’s a global lifestyle platform built to be smarter, faster, and more versatile than DoorDash, Uber Eats, or Deliveroo.
+ElfaGo is more than a delivery app  it’s a global lifestyle platform built to be smarter, faster, and more versatile than DoorDash, Uber Eats, or Deliveroo.
 
 🚀 Why ElfaGo Stands Out
 AI‑powered logistics: Machine learning predicts demand, optimizes routes, and ensures faster, more reliable service.
